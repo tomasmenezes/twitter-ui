@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container, Header, BackIcon, ProfileInfo } from './styles'
+import ProfilePage from '../ProfilePage'
+import { Container, Header, BackIcon, ProfileInfo, BottomMenu, HomeIcon, SearchIcon, BellIcon, EmailIcon } from './styles'
 
 const Main = () => {
     return (
@@ -15,14 +16,14 @@ const Main = () => {
                 </ProfileInfo>
             </Header>
 
-            {/* <ProfilePage /> */}
+            <ProfilePage />
 
-            {/* <BottomMenu>
-                <HomeIcon />
+            <BottomMenu>
+                <HomeIcon className="active" />
                 <SearchIcon />
                 <BellIcon />
                 <EmailIcon />
-            </BottomMenu> */}
+            </BottomMenu>
         </Container>
     )
 }
