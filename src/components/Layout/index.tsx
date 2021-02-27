@@ -1,6 +1,6 @@
-import React from 'react'
-import { Container, Wrapper } from './styles'
-import Main from '../Main'
+import React from 'react';
+import { Container, Wrapper } from './styles';
+import Main from '../Main';
 
 const Layout = () => {
     return (
@@ -11,7 +11,7 @@ const Layout = () => {
                 {/* <SideBar /> */}
             </Wrapper>
         </Container>
-    )
-}
+    );
+};
 
-export default Layout
+export default Layout;

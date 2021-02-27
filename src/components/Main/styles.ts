@@ -1,5 +1,11 @@
-import styled, { css } from 'styled-components'
-import { ArrowLeft, Home, Search, Notifications, Email } from '../../styles/icons'
+import styled, { css } from 'styled-components';
+import {
+    ArrowLeft,
+    Home,
+    Search,
+    Notifications,
+    Email,
+} from '../../styles/Icons';
 
 export const Container = styled.div`
     display: flex;
@@ -63,7 +69,6 @@ export const ProfileInfo = styled.div`
     }
 `;
 
-
 export const BottomMenu = styled.div`
     position: fixed;
     bottom: 0;
@@ -71,7 +76,9 @@ export const BottomMenu = styled.div`
     z-index: 2;
 
     background: var(--primary);
+
     width: 100%;
+    height: 49px;
     border-top: 1px solid var(--outline);
 
     display: flex;
@@ -82,7 +89,6 @@ export const BottomMenu = styled.div`
     @media (min-width: 500px) {
         display: none;
     }
-
 `;
 
 const iconCSS = css`
@@ -93,7 +99,8 @@ const iconCSS = css`
 
     fill: var(--gray);
 
-    &:hover, &.active {
+    &:hover,
+    &.active {
         fill: var(--twitter);
     }
 `;

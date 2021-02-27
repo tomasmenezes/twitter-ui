@@ -1,10 +1,20 @@
-import React from 'react'
-import ProfilePage from '../ProfilePage'
-import { Container, Header, BackIcon, ProfileInfo, BottomMenu, HomeIcon, SearchIcon, BellIcon, EmailIcon } from './styles'
+import React from 'react';
+import ProfilePage from '../ProfilePage';
+import {
+    Container,
+    Header,
+    BackIcon,
+    ProfileInfo,
+    BottomMenu,
+    HomeIcon,
+    SearchIcon,
+    BellIcon,
+    EmailIcon,
+} from './styles';
 
 const Main = () => {
     return (
-        <Container> 
+        <Container>
             <Header>
                 <button>
                     <BackIcon />
@@ -25,7 +35,7 @@ const Main = () => {
                 <EmailIcon />
             </BottomMenu>
         </Container>
-    )
-}
+    );
+};
 
-export default Main
+export default Main;
