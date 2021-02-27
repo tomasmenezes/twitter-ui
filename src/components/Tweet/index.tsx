@@ -17,7 +17,25 @@ import {
     LikeIcon,
 } from './styles';
 
-const Tweet = () => {
+interface tweetProps {
+    name?: string;
+    username?: string;
+    date?: string;
+    description?: string;
+    comments?: number;
+    retweets?: number;
+    likes?: number;
+}
+
+const Tweet = ({
+    name,
+    username,
+    date,
+    description,
+    comments,
+    retweets,
+    likes,
+}: tweetProps) => {
     return (
         <Container>
             <Retweeted>
@@ -30,26 +48,28 @@ const Tweet = () => {
 
                 <Content>
                     <Header>
-                        <strong>Username</strong>
-                        <span>@username</span>
+                        <strong>{name ? name : 'Username'}</strong>
+                        <span>@{username ? username : 'username'}</span>
                         <Dot />
-                        <time>27th Jun</time>
+                        <time>{date ? date : '27th Jun'}</time>
                     </Header>
 
-                    <Description>To the moon! 🚀💎</Description>
+                    <Description>
+                        {description ? description : 'To the moon! 🚀💎'}
+                    </Description>
                     <ImageContent />
                     <Icons>
                         <Status>
                             <CommentIcon />
-                            18
+                            {comments ? comments : 18}
                         </Status>
                         <Status>
                             <RetweetIcon />
-                            294
+                            {retweets ? retweets : 294}
                         </Status>
                         <Status>
                             <LikeIcon />
-                            56
+                            {likes ? likes : 56}
                         </Status>
                     </Icons>
                 </Content>

@@ -10,8 +10,15 @@ const Feed = () => {
 
             <Tweets>
                 <Tweet />
+                <Tweet
+                    name="Elon Musk"
+                    username="stonks"
+                    description="DOGE is the future boys ⚡️"
+                    comments={1337}
+                    retweets={666}
+                    likes={30035}
+                />
                 {/* <Tweet />
-                <Tweet />
                 <Tweet />
                 <Tweet /> */}
             </Tweets>
