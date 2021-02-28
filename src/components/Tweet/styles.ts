@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { Chat, Retweet, Favorite } from '../../styles/Icons';
+import { Chat, Retweet, Favorite, DotsHorizontal } from '../../styles/Icons';
 
 export const Container = styled.div`
     display: flex;
@@ -29,6 +29,8 @@ export const Retweeted = styled.div`
     font-size: 13px;
     color: var(--gray);
 
+    margin-bottom: 3px;
+
     &.not-retweeted {
         display: none;
     }
@@ -36,7 +38,7 @@ export const Retweeted = styled.div`
 
 export const Body = styled.div`
     display: flex;
-    margin-top: 3px;
+    /* margin-top: 3px; */
 
     height: 100%;
     position: relative;
@@ -71,6 +73,30 @@ export const Content = styled.div`
 
 export const Header = styled.div`
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+    > button {
+        position: absolute;
+        right: -6px;
+        top: -9px;
+
+        padding: 8px;
+        border-radius: 50%;
+
+        outline: 0;
+        cursor: pointer;
+
+        :hover {
+            background-color: var(--twitter-dark-hover);
+        }
+    }
+`;
+
+export const HeaderInfo = styled.div`
+    display: flex;
     align-items: center;
 
     font-size: 15px;
@@ -101,6 +127,17 @@ export const Dot = styled.div`
 
     border-radius: 50%;
     margin: 0 10px;
+`;
+
+export const OptionsIcon = styled(DotsHorizontal)`
+    height: 20px;
+    width: 20px;
+
+    fill: var(--gray);
+
+    &:hover {
+        fill: var(--twitter);
+    }
 `;
 
 export const Description = styled.p`

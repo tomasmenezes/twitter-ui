@@ -9,11 +9,12 @@ const Feed = () => {
             <Tab>Tweets</Tab>
 
             <Tweets>
-                <Tweet />
+                <Tweet date="4h" />
                 <Tweet
                     name="Elon Musk"
                     username="stonks"
                     description="DOGE is the future boys ⚡️"
+                    isRetweet={true}
                     comments={1337}
                     retweets={666}
                     likes={30035}

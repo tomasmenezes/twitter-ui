@@ -7,7 +7,9 @@ import {
     Avatar,
     Content,
     Header,
+    HeaderInfo,
     Dot,
+    OptionsIcon,
     Description,
     ImageContent,
     Icons,
@@ -50,10 +52,16 @@ const Tweet = ({
 
                 <Content>
                     <Header>
-                        <strong>{name ? name : 'Username'}</strong>
-                        <span>@{username ? username : 'username'}</span>
-                        <Dot />
-                        <time>{date ? date : '27th Jun'}</time>
+                        <HeaderInfo>
+                            <strong>{name ? name : 'Username'}</strong>
+                            <span>@{username ? username : 'username'}</span>
+                            <Dot />
+                            <time>{date ? date : '27th Jun'}</time>
+                        </HeaderInfo>
+
+                        <button>
+                            <OptionsIcon />
+                        </button>
                     </Header>
 
                     <Description>
