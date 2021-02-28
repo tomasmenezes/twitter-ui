@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
     * {
@@ -33,6 +33,7 @@ export default createGlobalStyle`
         --search: #202327;
         --white: #D9D9D9;
         --gray: #7A7A7A;
+        --gray-dark-hover: #6e6e6e;
         --outline: #2F3336;
         --retweet: #00C06B;
         --like: #E8265E;

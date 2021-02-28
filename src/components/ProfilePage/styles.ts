@@ -36,13 +36,19 @@ export const Avatar = styled.div`
     height: max(45px, min(135px, 22vw));
     width: max(45px, min(135px, 22vw));
 
-    border: 3.75px solid var(--primary);
+    border: 4px solid var(--primary); // 3.75px
     background: var(--gray);
     border-radius: 50%;
 
     position: absolute;
     bottom: max(-60px, -10vw);
     left: 15px;
+    z-index: 2;
+
+    &:hover {
+        cursor: pointer;
+        background: var(--gray-dark-hover);
+    }
 `;
 
 export const ProfileData = styled.div`
@@ -130,7 +136,7 @@ export const Followers = styled.div`
 export const EditButton = styled(Button)`
     position: absolute;
     top: 2vw;
-    right: 7px;
+    right: 16px; // 7px;
 
     padding: 4px 16px;
     font-size: 13px;

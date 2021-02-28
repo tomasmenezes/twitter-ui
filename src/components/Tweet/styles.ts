@@ -12,6 +12,14 @@ export const Container = styled.div`
 
     min-height: 100px;
     max-width: 100%;
+
+    background: var(--primary);
+    // transition: background 0.15s ease-out 0s;
+
+    &:hover {
+        cursor: pointer;
+        background: rgba(10, 10, 10, 1);
+    }
 `;
 
 export const Retweeted = styled.div`
@@ -42,6 +50,10 @@ export const Avatar = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+
+    &:hover {
+        background: var(--gray-dark-hover);
+    }
 `;
 
 export const Content = styled.div`

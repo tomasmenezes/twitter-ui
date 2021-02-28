@@ -42,7 +42,7 @@ const ProfilePage = () => {
 
                 <Followers>
                     <span>
-                        Following <strong>220</strong>
+                        <strong>220 </strong> Following
                     </span>
                     <span>
                         <strong>2839 </strong> Followers
