@@ -25,6 +25,7 @@ export const Container = styled.div`
 
         max-height: 100vh;
         overflow-y: auto;
+        max-width: 250px;
     }
 `;
 
@@ -147,4 +148,74 @@ export const FavoriteIcon = styled(FavoriteBorder)`
 
 export const ProfileIcon = styled(Person)`
     ${iconCSS}
+`;
+
+export const Botside = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 1280px) {
+        justify-content: flex-start;
+    }
+
+    margin-top: 20px;
+`;
+
+export const Avatar = styled.div`
+    height: 39px;
+    width: 39px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: var(--gray);
+`;
+
+export const ProfileData = styled.div`
+    display: none;
+
+    @media (min-width: 1280px) {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 10px;
+        font-size: 14px;
+
+        min-width: 0;
+        > strong,
+        span {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        > span {
+            color: var(--gray);
+        }
+    }
+`;
+
+export const ExitIcon = styled(ExitToApp)`
+    display: none;
+
+    @media (min-width: 1280px) {
+        display: inline-block;
+    }
+
+    //${iconCSS}
+
+    height: 25px;
+    width: 25px;
+    color: var(--white);
+    margin-left: 30px;
+
+    cursor: pointer;
+
+    &:hover {
+        > path {
+            color: var(--like);
+        }
+    }
 `;

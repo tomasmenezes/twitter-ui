@@ -11,6 +11,10 @@ import {
     EmailIcon,
     FavoriteIcon,
     ProfileIcon,
+    Botside,
+    Avatar,
+    ProfileData,
+    ExitIcon,
 } from './styles';
 
 const MenuBar = () => {
@@ -49,6 +53,17 @@ const MenuBar = () => {
                     <span>Tweet</span>
                 </Button>
             </Topside>
+
+            <Botside>
+                <Avatar />
+
+                <ProfileData>
+                    <strong>ReallyReallybigUsername</strong>
+                    <span>@username</span>
+                </ProfileData>
+
+                <ExitIcon />
+            </Botside>
         </Container>
     );
 };
