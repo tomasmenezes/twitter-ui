@@ -28,6 +28,10 @@ export const Retweeted = styled.div`
 
     font-size: 13px;
     color: var(--gray);
+
+    &.not-retweeted {
+        display: none;
+    }
 `;
 
 export const Body = styled.div`

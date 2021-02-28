@@ -22,6 +22,7 @@ interface tweetProps {
     username?: string;
     date?: string;
     description?: string;
+    isRetweet?: boolean;
     comments?: number;
     retweets?: number;
     likes?: number;
@@ -32,13 +33,14 @@ const Tweet = ({
     username,
     date,
     description,
+    isRetweet,
     comments,
     retweets,
     likes,
 }: tweetProps) => {
     return (
         <Container>
-            <Retweeted>
+            <Retweeted className={isRetweet ? '' : 'not-retweeted'}>
                 <SmallRetweetIcon />
                 You retweeted
             </Retweeted>

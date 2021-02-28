@@ -43,7 +43,7 @@ export const Avatar = styled.div`
     position: absolute;
     bottom: max(-60px, -10vw);
     left: 15px;
-    z-index: 2;
+    z-index: 1;
 
     &:hover {
         cursor: pointer;
