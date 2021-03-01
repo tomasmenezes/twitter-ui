@@ -3,6 +3,7 @@ import { Search } from '../../styles/Icons';
 
 export const Container = styled.div`
     display: none;
+    max-height: 1vh;
 
     @media (min-width: 1000px) {
         display: flex;
@@ -47,6 +48,7 @@ export const SearchInput = styled.input`
     }
 
     outline: 0;
+    border: 1px solid var(--search);
 
     &:focus {
         border: 1px solid var(--twitter);
@@ -67,6 +69,7 @@ export const SearchIcon = styled(Search)`
 export const Body = styled.div`
     display: flex;
     flex-direction: column;
+    height: 100%;
 
     padding: 57px 24px 200px;
     margin-top: 3px;
